@@ -3,7 +3,7 @@
 
 ## Description
 
-This PWA project is a single page text editor application that can run inside the browser or be installed locally.  Data is stored using IndexedDB API and idb package.
+This PWA project is a single page text editor application that can run inside the browser or be installed locally and work offline. Application utilizes [CodeMirror](https://codemirror.net/) API for text colors. Language mode is set to JavaScript and the theme is set to Monokai. Data is stored using IndexedDB API and idb package. 
 
 ## Table of Contents
 
@@ -15,22 +15,28 @@ This PWA project is a single page text editor application that can run inside th
 - [Questions](#Questions)
 
 ## Installation
+[Repository](https://github.com/a-donati/text-editor)
 
-* From GitHub, fork or clone the repo. The user must have Node.js installed. Once forked, run `npm i` from the root directory to install required dependencies
+
+* From GitHub, fork or clone the repo. The user must have Node.js installed. Once forked, run `npm i` from the root directory to install required dependencies.
+* Run `npm start` to start the application
 
 
 ## Usage
 
- [Click here for video demo of application]()
+Type within the text fields, content is saved to IndexedDB once the user clicks outside of the focused text area
 
-![text-editor usage demonstrated in browser]()
+ [Click here for deployed Heroku application](https://polar-tor-58149.herokuapp.com/)
+ 
+![text-editor usage demonstrated after local installation](./client/src/images/text-editor.png)
 
 
 ## References
 
-* [IndexedDB]()
-* [idb]()
-* [Webpack]()
+* [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+* [idb](https://www.npmjs.com/package/idb)
+* [Webpack](https://www.npmjs.com/package/webpack)
+* [CodeMirror](https://codemirror.net/)
 
 
 ## License
