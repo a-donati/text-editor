@@ -9,18 +9,20 @@
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd client && npm install",
-    "client": "cd client && npm start",
-    "prod": "NODE_ENV=production webpack",
-    "dev": "webpack"
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "latest-version": "^6.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
     "concurrently": "^5.2.0",
     "html-webpack-plugin": "^5.5.0",
     "nodemon": "^2.0.4",
